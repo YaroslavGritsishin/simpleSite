@@ -1,0 +1,141 @@
+@font-face {
+	font-family: 'AdelleCyrillic'; 
+	src: url(../../../../assets/fonts/AdelleCyrillic.woff); 
+}
+@font-face {
+	font-family: 'ProximaNova'; 
+	src: url(../../../../assets/fonts/ProximaNova.woff); 
+}
+.title{
+    font-family: 'AdelleCyrillic';
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    grid-template-areas: "img1 stepper desc1"
+                         "desc2 stepper img2"
+                         "img3 stepper desc3"; 
+                         
+    .grid-img1{
+        grid-area: img1;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+    .grid-img2{
+        grid-area: img2;
+        display: flex;
+        margin-left: 30px;
+    }
+    .grid-img3{
+        grid-area: img3;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+    .grid-decription1{
+        grid-area: desc1;
+        display: flex;
+        margin-left: 30px;
+        
+    }
+    .grid-decription2{
+        grid-area: desc2;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+    .grid-decription3{
+        grid-area: desc3;
+        display: flex;
+        margin-left: 30px;
+    }    
+    .stepper{
+        grid-area: stepper;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0 auto;
+        
+        li {
+            position: relative;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            border: 5px solid black;
+            list-style-type: none; 
+        }
+        li::before {
+            content: '';
+            position: absolute;
+            top: 1.1em;
+            left: .4em;
+            width: .2em;
+            height: 15.3em;
+            background: black;
+            z-index: -1;
+
+        }
+        li:last-child::before{
+                width: 0;
+            
+        }
+
+    }
+    img{
+        margin-top: 2rem;
+        height: 230px;
+        width: 280px;
+        object-fit: cover;
+    }
+    .wrapper{
+        margin-top: 2rem;
+        width: 280px;
+        height: 100%;
+        .desc-title{
+            font-family: 'AdelleCyrillic';
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 38px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #8F8F8F;
+            padding-bottom: 0.8rem;
+        }
+        .desc{
+            font-family: 'ProximaNova';
+            font-size: 16px;
+            letter-spacing: 1.5px;
+            line-height: 22px;
+            color: #8F8F8F;
+            padding-bottom: 0.8rem;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            border: 1.5px solid black;
+            font-family: 'ProximaNova';
+            font-size: 16px;
+            text-transform: uppercase;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+
+
+    }
+
+    
+}

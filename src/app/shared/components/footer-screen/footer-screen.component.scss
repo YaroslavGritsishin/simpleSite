@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'AdelleCyrillic'; 
+	src: url(../../../../assets/fonts/AdelleCyrillic.woff); 
+}
+@font-face {
+	font-family: 'ProximaNova'; 
+	src: url(../../../../assets/fonts/ProximaNova.woff); 
+}
+footer{
+    background-color: #282828 ;
+    
+    .footer-wrapper{
+        padding: 4rem 0;
+        margin: 0 7rem;
+        .title-text{
+            width: 200px;
+            font-family: 'AdelleCyrillic';
+            font-size: 44px;
+            letter-spacing: 1px;
+            color: white;
+            border-bottom: 3px solid white;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2rem;
+            .contact{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 250px;
+                a{
+                    font-family: 'ProximaNova';
+                    font-size: 36px;
+                    text-decoration: none;
+                    color: white;
+                    outline: none;
+                    img{
+                        width: 20px;
+                        height: 21px;
+                    }
+                }
+                span{
+                    font-family: 'ProximaNova';
+                    font-size: 26px;
+                    color: white;
+                };
+                p{
+                    margin: 0;
+                    margin-bottom: 10px;
+                    font-family: 'ProximaNova';
+                    font-size: 16px;
+                    color: white;
+                }
+                .ring-btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 150px;
+                    height: 30px;
+                    color: white;
+                    background-color: #cc9966;
+                    &:hover{
+                        cursor: pointer;
+                    }    
+                }
+            }
+            .address{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 250px;
+                .address-title{
+                    margin: 0;
+                    margin-bottom: 10px;
+                    font-family: 'ProximaNova';
+                    font-size: 26px;
+                    color: white;
+                }
+                .desc{
+                    margin: 0;
+                    margin-bottom: 10px;
+                    font-family: 'ProximaNova';
+                    font-size: 16px;
+                    color: white;
+                }
+                img{
+                    width: 250px;
+                }
+            }
+        }
+    }
+    
+} 
